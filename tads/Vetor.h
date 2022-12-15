@@ -5,6 +5,12 @@
 #include <stdlib.h>
 
 
+typedef enum {
+    FLOAT = 0,
+    INT = 1,
+    DOUBLE = 2,
+}type;
+
 /**
 Tipo opaco que contem um ponteiro de void,
 o tamanho do vetor e o tipo do vetor.
@@ -87,5 +93,6 @@ double calcular(Vetor *v, char c);
  
  */
 void liberar(Vetor *v);
+
 
 #endif
